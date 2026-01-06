@@ -5,7 +5,7 @@ A bookmarklet/userscript for analyzing paywall configurations on kurier.at and f
 ## File Structure
 
 ```
-bookmarklet/
+paywall_bookmarklet/
 ├── loader.js                    # Main entry point (loads modules)
 ├── paywall-inspector.js         # Single-file version (standalone)
 ├── paywall-inspector.user.js    # Tampermonkey userscript
@@ -27,7 +27,7 @@ Best for occasional use. Click the bookmarklet when you want to inspect a page.
 3. For the URL, use:
 
 ```javascript
-javascript:(function(){var s=document.createElement('script');s.src='https://cdn.jsdelivr.net/gh/derfleck/analytics_debugger@main/bookmarklet/loader.js?_='+Date.now();document.body.appendChild(s);})();
+javascript:(function(){var s=document.createElement('script');s.src='https://cdn.jsdelivr.net/gh/derfleck/paywall_bookmarklet@main/loader.js?_='+Date.now();document.body.appendChild(s);})();
 ```
 
 **Usage:** Click the bookmarklet on any kurier.at or freizeit.at page.
@@ -43,7 +43,7 @@ Best for always-on usage. Automatically loads on every kurier.at and freizeit.at
 **Installation:**
 
 1. Install Tampermonkey from your browser's extension store
-2. Click here to install the userscript: [paywall-inspector.user.js](https://cdn.jsdelivr.net/gh/derfleck/analytics_debugger@main/bookmarklet/paywall-inspector.user.js)
+2. Click here to install the userscript: [paywall-inspector.user.js](https://cdn.jsdelivr.net/gh/derfleck/paywall_bookmarklet@main/paywall-inspector.user.js)
 3. Click "Install" in Tampermonkey
 
 Or manually:
@@ -59,7 +59,7 @@ Or manually:
 For simpler deployment, use the all-in-one file:
 
 ```javascript
-javascript:(function(){var s=document.createElement('script');s.src='https://cdn.jsdelivr.net/gh/derfleck/analytics_debugger@main/bookmarklet/paywall-inspector.js?_='+Date.now();document.body.appendChild(s);})();
+javascript:(function(){var s=document.createElement('script');s.src='https://cdn.jsdelivr.net/gh/derfleck/paywall_bookmarklet@main/paywall-inspector.js?_='+Date.now();document.body.appendChild(s);})();
 ```
 
 ---
@@ -104,7 +104,7 @@ The code is split into modules for easier maintenance:
 To bust the cache immediately, update the version in the URL:
 ```javascript
 // Change @main to a specific commit or tag
-https://cdn.jsdelivr.net/gh/derfleck/analytics_debugger@COMMIT_HASH/bookmarklet/loader.js
+https://cdn.jsdelivr.net/gh/derfleck/paywall_bookmarklet@COMMIT_HASH/loader.js
 ```
 
 ### Testing Locally
@@ -112,7 +112,7 @@ https://cdn.jsdelivr.net/gh/derfleck/analytics_debugger@COMMIT_HASH/bookmarklet/
 During development, you can test with local files:
 
 ```javascript
-javascript:(function(){var s=document.createElement('script');s.src='file:///path/to/bookmarklet/loader.js';document.body.appendChild(s);})();
+javascript:(function(){var s=document.createElement('script');s.src='file:///path/to/paywall_bookmarklet/loader.js';document.body.appendChild(s);})();
 ```
 
 Note: Some browsers block `file://` URLs on HTTPS pages. Use a local server or the browser console to test.
@@ -153,6 +153,6 @@ Note: Some browsers block `file://` URLs on HTTPS pages. Use a local server or t
 
 ## URLs
 
-- **Loader (modular):** `https://cdn.jsdelivr.net/gh/derfleck/analytics_debugger@main/bookmarklet/loader.js`
-- **Standalone:** `https://cdn.jsdelivr.net/gh/derfleck/analytics_debugger@main/bookmarklet/paywall-inspector.js`
-- **Userscript:** `https://cdn.jsdelivr.net/gh/derfleck/analytics_debugger@main/bookmarklet/paywall-inspector.user.js`
+- **Loader (modular):** `https://cdn.jsdelivr.net/gh/derfleck/paywall_bookmarklet@main/loader.js`
+- **Standalone:** `https://cdn.jsdelivr.net/gh/derfleck/paywall_bookmarklet@main/paywall-inspector.js`
+- **Userscript:** `https://cdn.jsdelivr.net/gh/derfleck/paywall_bookmarklet@main/paywall-inspector.user.js`

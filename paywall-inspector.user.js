@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Paywall Inspector
-// @namespace    https://github.com/derfleck/analytics_debugger
+// @namespace    https://github.com/derfleck/paywall_bookmarklet
 // @version      1.0
 // @description  Inspect paywall configuration on kurier.at and freizeit.at
 // @author       derfleck
@@ -14,7 +14,7 @@
 	'use strict';
 
 	// Configuration - Update this to your GitHub raw URL
-	const LOADER_URL = 'https://cdn.jsdelivr.net/gh/derfleck/analytics_debugger@main/bookmarklet/loader.js';
+	const LOADER_URL = 'https://cdn.jsdelivr.net/gh/derfleck/paywall_bookmarklet@main/loader.js';
 
 	// Check if already loaded
 	if (window.__paywallInspectorLoaded) {
