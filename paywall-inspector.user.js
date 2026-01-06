@@ -14,7 +14,7 @@
 	'use strict';
 
 	// Configuration - Update this to your GitHub raw URL
-	const LOADER_URL = 'https://cdn.jsdelivr.net/gh/derfleck/paywall_bookmarklet@main/loader.js';
+	const LOADER_URL = 'https://cdn.jsdelivr.net/gh/derfleck/paywall_bookmarklet@master/loader.js';
 
 	// Check if already loaded
 	if (window.__paywallInspectorLoaded) {

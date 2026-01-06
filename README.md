@@ -27,7 +27,7 @@ Best for occasional use. Click the bookmarklet when you want to inspect a page.
 3. For the URL, use:
 
 ```javascript
-javascript:(function(){var s=document.createElement('script');s.src='https://cdn.jsdelivr.net/gh/derfleck/paywall_bookmarklet@main/loader.js?_='+Date.now();document.body.appendChild(s);})();
+javascript:(function(){var s=document.createElement('script');s.src='https://cdn.jsdelivr.net/gh/derfleck/paywall_bookmarklet@master/loader.js?_='+Date.now();document.body.appendChild(s);})();
 ```
 
 **Usage:** Click the bookmarklet on any kurier.at or freizeit.at page.
@@ -43,7 +43,7 @@ Best for always-on usage. Automatically loads on every kurier.at and freizeit.at
 **Installation:**
 
 1. Install Tampermonkey from your browser's extension store
-2. Click here to install the userscript: [paywall-inspector.user.js](https://cdn.jsdelivr.net/gh/derfleck/paywall_bookmarklet@main/paywall-inspector.user.js)
+2. Click here to install the userscript: [paywall-inspector.user.js](https://cdn.jsdelivr.net/gh/derfleck/paywall_bookmarklet@master/paywall-inspector.user.js)
 3. Click "Install" in Tampermonkey
 
 Or manually:
@@ -59,7 +59,7 @@ Or manually:
 For simpler deployment, use the all-in-one file:
 
 ```javascript
-javascript:(function(){var s=document.createElement('script');s.src='https://cdn.jsdelivr.net/gh/derfleck/paywall_bookmarklet@main/paywall-inspector.js?_='+Date.now();document.body.appendChild(s);})();
+javascript:(function(){var s=document.createElement('script');s.src='https://cdn.jsdelivr.net/gh/derfleck/paywall_bookmarklet@master/paywall-inspector.js?_='+Date.now();document.body.appendChild(s);})();
 ```
 
 ---
@@ -153,6 +153,6 @@ Note: Some browsers block `file://` URLs on HTTPS pages. Use a local server or t
 
 ## URLs
 
-- **Loader (modular):** `https://cdn.jsdelivr.net/gh/derfleck/paywall_bookmarklet@main/loader.js`
-- **Standalone:** `https://cdn.jsdelivr.net/gh/derfleck/paywall_bookmarklet@main/paywall-inspector.js`
-- **Userscript:** `https://cdn.jsdelivr.net/gh/derfleck/paywall_bookmarklet@main/paywall-inspector.user.js`
+- **Loader (modular):** `https://cdn.jsdelivr.net/gh/derfleck/paywall_bookmarklet@master/loader.js`
+- **Standalone:** `https://cdn.jsdelivr.net/gh/derfleck/paywall_bookmarklet@master/paywall-inspector.js`
+- **Userscript:** `https://cdn.jsdelivr.net/gh/derfleck/paywall_bookmarklet@master/paywall-inspector.user.js`

@@ -6,7 +6,7 @@
 	'use strict';
 
 	// Configuration - Update this to your GitHub raw URL base
-	const BASE_URL = 'https://cdn.jsdelivr.net/gh/derfleck/paywall_bookmarklet@main/src';
+	const BASE_URL = 'https://cdn.jsdelivr.net/gh/derfleck/paywall_bookmarklet@master/src';
 
 	// Modules to load in order
 	const MODULES = [
